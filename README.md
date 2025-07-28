@@ -350,4 +350,249 @@ Release testing resources.
 Transfer knowledge to maintenance/support teams if needed.
 
 
+**Types of Testing:**
+1. **Functional Testing**
+Definition: Functional testing verifies that the software system operates according to the specified functional requirements. It focuses on "what" the system does.
+
+Purpose: To ensure every feature works as expected from a user or business perspective.
+
+Scope: Tests user commands, data manipulation, integrations, business processes, and system functionality.
+
+Typical Tests:
+
+Unit testing (individual components)
+
+Integration testing (how components work together)
+
+System testing (end-to-end validation)
+
+User Acceptance Testing (final validation by users)
+
+Example: Verifying if login functionality works with valid credentials, denies access with invalid ones, and handles password resets correctly.
+
+Manual/Automated: Mostly manual, but can be automated especially for regression suites.
+
+2. **Non-Functional Testing**
+Definition: Testing non-functional requirements such as performance, usability, reliability, and security rather than specific behaviors.
+
+Purpose: To validate attributes of the system that affect user experience and operational quality.
+
+Key Types:
+
+Performance Testing: Checks speed, responsiveness under load.
+
+Load Testing: Measures system behavior under expected user load.
+
+Stress Testing: Tests system limits under extreme conditions.
+
+Security Testing: Identifies vulnerabilities or risks.
+
+Usability Testing: Assesses ease of use and user-friendliness.
+
+Compatibility Testing: Ensures proper operation across devices, browsers, OS.
+
+Example: Testing how quickly a website loads with 1000 simultaneous users or validating the software’s encryption methods.
+
+Manual/Automated: Mostly automated tools; some usability and compatibility tests are manual.
+
+3. **Regression Testing**
+Definition: Re-testing existing software functionality to ensure that recent code changes have not adversely affected previously working features.
+
+Purpose: To catch new bugs or defects introduced by enhancements, patches, or fixes.
+
+When: Performed after any code changes, bug fixes, or feature additions.
+
+Scope: Can cover all or part of the software depending on changes.
+
+Automation: Highly suited for automation due to repetitive nature.
+
+Example: After fixing a bug in the payment module, rerunning tests for checkout, order confirmation, and account balance updates.
+
+4. **Smoke Testing**
+Definition: A shallow and wide approach to testing that checks basic system functionality to determine if it is stable enough for further testing.
+
+Purpose: To verify the most critical functions work after a new build or deployment.
+
+When: Often the first test run on a new build.
+
+Scope: Focuses on major features, does not go deep.
+
+Example: For an e-commerce app, verifying login, product search, and add-to-cart functionality before proceeding with detailed tests.
+
+Automation: Can be automated for rapid feedback.
+
+5. **Sanity Testing**
+Definition: A focused run of tests verifying specific functionality after minor changes or bug fixes to ensure particular features work correctly.
+
+Purpose: To quickly confirm that a specific bug fix or functionality change is working as intended.
+
+When: After receiving a new build with minor updates or bug fixes.
+
+Scope: Narrow; tests only the affected areas.
+
+Example: After fixing the password reset flow, testing just that feature without touching unrelated features.
+
+Automation: Usually manual but can be automated.
+
+6. **Integration Testing**
+Definition: Testing the interactions between integrated modules or components to ensure they work together correctly.
+
+Purpose: To identify interface defects between modules.
+
+Approaches:
+
+Big Bang: Integrate all components and test at once.
+
+Incremental: Integrate and test modules one by one.
+
+Example: Testing payment processing module interaction with order management and notification systems.
+
+Manual/Automated: Both, depending on complexity.
+
+7. **System Testing**
+Definition: Testing a completely integrated system to verify that it meets specified requirements.
+
+Purpose: To validate the end-to-end system specifications and behavior.
+
+Scope: Entire application including all modules, databases, interfaces, and network.
+
+Types within System Testing: Functional, performance, security, usability testing within the system context.
+
+Example: Testing an entire banking app’s fund transfer, account statements, and notifications as a single system.
+
+Manual/Automated: Both.
+
+8. **User Acceptance Testing (UAT)**
+Definition: Formal testing performed by the end users or clients to confirm that the software meets business requirements and is ready for production.
+
+Purpose: To validate the software from user perspective before release.
+
+Scope: Real-world scenarios, workflows, and use cases.
+
+Types: Alpha testing (internal users), Beta testing (selected external users).
+
+Example: Business users validating reports generation and workflow in an ERP system.
+
+Manual/Automated: Usually manual.
+
+
+<img width="685" height="618" alt="image" src="https://github.com/user-attachments/assets/17efe361-1702-472d-b487-f7c4d2f322fc" />
+
+**Testing Techniques**
+
+**Black Box Testing**
+Definition: Black Box Testing is a software testing technique where the tester evaluates the functionality of the application without any knowledge of its internal code or implementation. It focuses on testing the software from an end-user’s perspective, validating inputs against expected outputs.
+
+Key Characteristics:
+
+Tester does not need programming knowledge or access to source code.
+
+Focuses on functionality, requirements, and behavior of the system.
+
+Tests are based on requirements, use cases, and business logic.
+
+Common Black Box Testing Techniques:
+
+Equivalence Partitioning: Divides input data into classes or sets where test cases for one value represent the entire class. For example, for an age input range 18–65, testing one valid age (say 30) represents all valid ages.
+
+Boundary Value Analysis (BVA): Tests the edge values just inside and outside input boundaries where defects often occur (e.g., test values 17, 18, 65, 66 for an age input 18–65).
+
+Decision Table Testing: Uses tables mapping combinations of inputs (conditions) to outputs (actions), useful for complex business rules.
+
+State Transition Testing: Tests different states of an application and transitions triggered by events (e.g., logged in, logged out states).
+
+Error Guessing: Based on experience, testers anticipate common errors developers might make.
+
+Advantages:
+
+Tests software from user’s perspective.
+
+Does not require knowledge of internal implementation.
+
+Effective for validation and acceptance testing.
+
+Limitations:
+
+Limited coverage of internal code paths.
+
+May miss some logical errors in code.
+
+**White Box Testing**
+Definition: White Box Testing (also called Clear Box or Glass Box Testing) involves testing the internal workings, structure, and logic of the software. The tester has knowledge of the source code and designs test cases to exercise specific code paths, branches, conditions, and loops.
+
+Key Characteristics:
+
+Requires programming knowledge.
+
+Tests internal logic and structure.
+
+Focus on code coverage (statement, branch, path coverage).
+
+Common White Box Testing Techniques:
+
+Unit Testing: Testing individual functions/methods/classes.
+
+Statement Coverage: Ensuring every line of code is executed at least once.
+
+Branch Coverage: Testing each possible branch (true/false) in control structures.
+
+Path Coverage: Testing all possible execution paths.
+
+Mutation Testing: Introducing small changes (mutations) to code to check if test cases detect bugs.
+
+Advantages:
+
+Ensures thorough code coverage.
+
+Early detection of logical errors.
+
+Optimizes and improves code quality.
+
+Limitations:
+
+Requires knowledge of code and programming.
+
+Time-consuming for large applications.
+
+May not catch missing functionality or integration issues.
+
+**Grey Box Testing**
+Definition: Grey Box Testing is a hybrid technique that involves testing with partial knowledge of the internal workings of the application. Testers have access to design documents, database schemas, or code structure but test primarily from a black box perspective.
+
+Key Characteristics:
+
+Tester has limited knowledge of internal logic.
+
+Combines advantages of both black box and white box testing.
+
+Focus on both functionality and some code or data structure verification.
+
+Common Grey Box Testing Approaches:
+
+Validate data flow between modules.
+
+Test security vulnerabilities using knowledge of internal architecture.
+
+Use internal knowledge to design more effective test cases than pure black box testing.
+
+Perform regression testing more efficiently by understanding impact areas.
+
+Advantages:
+
+Better test coverage than pure black box testing.
+
+Detects context-specific errors related to data flow or security.
+
+Requires less code knowledge than white box testing, balancing complexity.
+
+Limitations:
+
+Not as thorough as white box testing.
+
+May need test engineers with some programming or design background.
+
+Partial access to code or architecture may limit testing depth.
+
+<img width="707" height="351" alt="image" src="https://github.com/user-attachments/assets/0d342ada-3f91-4497-a479-c20f28124216" />
+
 

@@ -141,5 +141,42 @@ Several SDLC models exist to organize these phases. Choosing a model depends on 
 **Model	Description	Best for	Key Characteristics**
 <img width="764" height="477" alt="image" src="https://github.com/user-attachments/assets/47ca42b0-f7e9-4518-834e-d98976f2bb34" />
 
+1. Waterfall Model
+Phases flow downwards linearly, without overlap.
+
+Emphasis on documentation and upfront planning.
+
+Testing happens after the entire coding phase is complete.
+
+Not suitable for changing requirements because once a phase is done, it’s costly to revisit.
+
+2. Spiral Model
+Combines iterative development with systematic risk assessment.
+
+Development proceeds in spirals or loops, each involving planning, risk analysis, engineering, and evaluation.
+
+After each loop, a prototype or partial release is produced.
+
+Very useful for complex, high-risk projects where requirements are unclear.
+
+3. V-Model (Validation and Verification Model)
+Represents each development phase with a corresponding testing phase forming a “V” shape.
+
+For example, Requirements phase links to Acceptance Testing; Design phase links to System Testing.
+
+Ensures testing is planned early and executed alongside development.
+
+Widely used in regulated industries requiring high quality.
+
+4. Agile Model
+Development is broken into small iterations or sprints, typically 2-4 weeks long.
+
+Each sprint produces a potentially shippable product increment.
+
+Focus on customer collaboration, responding to change, and continuous improvement.
+
+Common frameworks include Scrum, Kanban, and XP (Extreme Programming).
+
+Encourages daily stand-ups, frequent demos, and retrospectives.
 
 

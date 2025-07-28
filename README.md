@@ -179,4 +179,175 @@ Common frameworks include Scrum, Kanban, and XP (Extreme Programming).
 
 Encourages daily stand-ups, frequent demos, and retrospectives.
 
+**Software Testing Life Cycle (STLC)**
+The Software Testing Life Cycle (STLC) is a set of systematic phases that define the testing process applied during software development to ensure the product’s quality meets specified requirements. Each phase has specific objectives, deliverables, and exit criteria that drive the testing process forward efficiently.
+
+STLC is closely aligned with the Software Development Life Cycle (SDLC) but focuses exclusively on testing activities to detect defects early and deliver a high-quality software product.
+
+**Phases of STLC**
+Most standard STLC models include the following six distinct phases:
+
+**Requirement Analysis**
+
+The QA team reviews and analyzes the software requirements from a testing perspective.
+
+Clarify any ambiguities or gaps with stakeholders.
+
+Evaluate testability of requirements including functional and non-functional aspects.
+
+Assess opportunities for automation.
+
+Deliverables: List of testable requirements, test coverage plan, automation feasibility report.
+
+**Test Planning**
+
+Define the overall testing strategy, scope, effort estimation, resource allocation, and schedule.
+
+Decide testing types (manual, automation, performance).
+
+Identify tools and environments needed.
+
+Risk analysis and mitigation planning.
+
+Assign roles and responsibilities.
+
+Deliverables: Test plan document, test strategy, resource and cost estimates.
+
+**Test Case Development / Test Design**
+
+Create detailed test cases/scenarios based on requirements.
+
+Prepare or update test data.
+
+Design automation scripts if applicable.
+
+Peer reviews of test cases and scripts.
+
+Map test cases to requirements using a Requirements Traceability Matrix (RTM).
+
+Deliverables: Approved test cases, test data sets, automation scripts, RTM.
+
+**Test Environment Setup**
+
+Prepare the hardware and software environments required for testing.
+
+Install and configure the system under test and necessary tools.
+
+Validate the test environment by performing smoke tests.
+
+Coordinate environment setup with developers, system admins, and network teams.
+
+Deliverables: Verified test environment ready for execution.
+
+**Test Execution**
+
+Execute planned test cases and record actual results.
+
+Log defects for failed test cases with all necessary details.
+
+Retest fixed defects and perform regression testing to ensure no new issues.
+
+Track test progress, coverage, and defect status.
+
+Deliverables: Test execution reports, defect logs, updated RTM.
+
+**Test Closure**
+
+Ensure that all critical defects have been resolved or accepted.
+
+Evaluate the test cycle outcomes against exit criteria.
+
+Prepare the test summary and closure report containing key metrics and learnings.
+
+Archive test ware artifacts and documents.
+
+Conduct retrospectives to identify process improvements.
+
+Deliverables: Test closure report, lessons learned, archived documents.
+
+**Entry and Exit Criteria in STLC**
+Each phase in STLC has Entry Criteria (conditions to start the phase) and Exit Criteria (conditions to complete the phase successfully). This ensures systematic progression and quality control.
+
+<img width="787" height="497" alt="image" src="https://github.com/user-attachments/assets/b2274a0c-ee51-46a4-8b90-b2295f65333c" />
+
+Detailed Phases: Test Planning, Design, Execution, and Closure
+1. **Test Planning**
+This phase sets the foundation for successful testing.
+
+Define what to test and how to test it.
+
+Outline testing objectives, scope, schedule, and approach.
+
+Identify any risks and mitigation options.
+
+Assign test team roles and responsibilities.
+
+Select tools for test management, execution, and automation.
+
+Create a Test Plan Document describing:
+
+Test objectives
+
+Scope (in and out of testing)
+
+Resource estimation
+
+Schedule and milestones
+
+Environment and tools requirements
+
+Risk assessment
+
+Entry and exit criteria for testing
+
+2. **Test Case Development (Test Design)**
+Design individual test cases or test scripts based on the requirements.
+
+Test cases include clear input data, execution steps, expected results.
+
+Develop test data required to execute test cases.
+
+Automated scripts may be developed in parallel.
+
+Review and baseline test cases to ensure coverage and quality.
+
+Maintain traceability by linking test cases to requirements (RTM).
+
+3. **Test Execution**
+Execute test cases as per the plan.
+
+Mark each test case as Passed, Failed, Blocked, or Deferred.
+
+Record actual results versus expected results.
+
+Log defects in a bug tracking system with reproduction steps and severity.
+
+Communicate progress in daily stand-ups or status reports.
+
+Re-test defects once fixed and perform regression testing to verify no side effects.
+
+Continuously monitor coverage and progress against test plans.
+
+4. **Test Closure**
+Confirm all test activities are complete and criteria met.
+
+Conduct a formal testing closure meeting to present results and challenges.
+
+Prepare Test Closure Report including:
+
+Summary of testing activities
+
+Number and severity of defects found/resolved
+
+Quality metrics like test coverage, pass/fail rate
+
+Lessons learned and improvement suggestions
+
+Archive test artifacts: test plans, cases, defect logs.
+
+Release testing resources.
+
+Transfer knowledge to maintenance/support teams if needed.
+
+
 

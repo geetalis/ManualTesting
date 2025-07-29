@@ -73,7 +73,7 @@ The Software Development Life Cycle (SDLC) is a structured process used by devel
 **Phases of SDLC**
 While the exact phase names can vary slightly across different methodologies, the typical SDLC consists of the following core phases:
 
-1. Planning and Requirement Analysis
+1. **Planning and Requirement Analysis**
 
 Define the project scope, objectives, and feasibility.
 
@@ -85,7 +85,7 @@ Produce key documents like the Software Requirement Specification (SRS).**
 
 Outcome: Approved project plan and requirements baseline.
 
-2. System Design
+2. **System Design**
 
 Design overall system architecture (High-Level Design) and detailed component designs (Low-Level Design).
 
@@ -95,7 +95,7 @@ Select technologies, tools, and hardware resources.
 
 Outcome: Design documents, prototypes, and architecture diagrams.
 
-3. Implementation (Coding)
+3. **Implementation (Coding)**
 
 Developers convert design into source code using chosen programming languages and tools.
 
@@ -105,7 +105,7 @@ Unit tests may be created and executed at this phase.
 
 Outcome: Functional software modules.
 
-4. Testing
+4. **Testing**
 
 Comprehensive verification to detect defects. Includes manual and automated tests such as unit, integration, system, acceptance, regression, performance, and security testing.
 
@@ -113,7 +113,7 @@ Test results are documented; defects are logged and tracked.
 
 Outcome: Verified and validated software ready for deployment.
 
-5. Deployment
+5. **Deployment**
 
 Software is deployed to production or live environments.
 
@@ -123,7 +123,7 @@ Activities include packaging, installation, configuration, and user training.
 
 Outcome: Software available to end-users.
 
-6. Maintenance
+6. **Maintenance**
 
 Ongoing support and updates to fix bugs, enhance features, and improve performance.
 
@@ -226,6 +226,9 @@ Peer reviews of test cases and scripts.
 Map test cases to requirements using a Requirements Traceability Matrix (RTM).
 
 Deliverables: Approved test cases, test data sets, automation scripts, RTM.
+
+<img width="607" height="611" alt="image" src="https://github.com/user-attachments/assets/92845ce5-5351-45b9-9e60-637c2eff9bec" />
+
 
 **Test Environment Setup**
 

@@ -598,4 +598,109 @@ Partial access to code or architecture may limit testing depth.
 
 <img width="707" height="351" alt="image" src="https://github.com/user-attachments/assets/0d342ada-3f91-4497-a479-c20f28124216" />
 
+**Test Case Development**
+Test Case Development is the process of identifying, documenting, and organizing the tests that will verify the software meets its requirements. It ensures systematic, repeatable testing and helps teams detect issues early.
+
+**Steps for Test Case Development:**
+
+Understand Requirements: Study the software requirements, user stories, or specifications thoroughly to clarify what should be tested.
+
+Identify Test Scenarios: Break down requirements into specific functionalities or behaviors to be tested, covering both positive (expected use) and negative (error/exception) paths.
+
+Define Inputs and Preconditions: Clearly describe the starting state and any required setup before test execution.
+
+Specify Actions: List each step the tester must perform.
+
+Document Expected Results: Clearly state the desired outcome for each step or the final state after test execution.
+
+Assign Unique IDs and Traceability: Link test cases to requirements for coverage tracking
+
+**Writing Test Cases**
+Test Case Writing is about clear documentation so any tester can execute the test and verify results.
+
+Standard Test Case Structure
+Test Case ID: Unique identifier.
+
+Title/Description: Brief description of what the test validates.
+
+Preconditions: Initial state or configuration required.
+
+Test Steps: Step-by-step actions for the test.
+
+Test Data: Inputs to be used (usernames, passwords, input values, etc.).
+
+Expected Result: The outcome that confirms the system works as intended.
+
+Actual Result: (filled post-execution).
+
+Status: Pass/Fail.
+
+Remarks/Comments: Additional notes
+
+
+<img width="780" height="475" alt="image" src="https://github.com/user-attachments/assets/d07839c9-0f1e-4086-b807-d84aada8fd98" />
+
+Best Practices for Writing Test Cases
+Be clear, concise, and unambiguous.
+
+Ensure test cases are self-explanatory and can be run independently.
+
+Include both positive and negative scenarios.
+
+Maintain traceability to requirements.
+
+Use consistent templates and formats for easy maintenance.
+
+Prioritize risk and business impact in test selection.
+
+Specify necessary test data and environment.
+
+Review for coverage, completeness, and accuracy.
+
+Test Case Design Techniques
+Test case design techniques help ensure high-quality, high-coverage test cases. They can be broadly categorized as:
+
+1. Black Box Testing Techniques (No code knowledge needed)
+Equivalence Partitioning: Divide inputs into equivalent groups (e.g., valid usernames, invalid usernames). Test one value per group.
+
+Boundary Value Analysis (BVA): Test at and around boundaries (e.g., minimum, maximum, just below, just above).
+
+Decision Table Testing: Create tables to cover combinations of conditions and actions, suitable for features with business rules.
+
+State Transition Testing: Test how the system transitions between states based on events or inputs.
+
+Error Guessing: Rely on experience to guess areas likely to contain defects.
+
+2. White Box Testing Techniques (Knowledge of code structure)
+Statement/Branch/Path Coverage: Ensure tests execute all logical paths, branches, and statements in the code.
+
+Loop Testing: Test the validity of different loop executions (zero, one, many times).
+
+3. Experience-Based/Exploratory Techniques
+Use tester experience to design ad hoc or exploratory tests in areas where traditional techniques might miss defects.
+
+Test Data Preparation
+Test Data Preparation involves identifying, creating, and managing the data needed to execute test cases. Good test data is realistic, represents the full range of input possibilities (valid, invalid, boundary cases), and helps uncover defects that otherwise might go unnoticed.
+
+Typical Test Data Types:
+
+Valid data: Expected, normal input values.
+
+Invalid data: Out-of-range, incorrect, or malformed inputs for negative testing.
+
+Boundary data: Values at the edges of allowable input ranges.
+
+Null/Empty data: Blank or missing values.
+
+Large/Complex data: For performance, stress, or security testing.
+
+Sources and Methods:
+
+Use data provided in requirements/user stories.
+
+Generate synthetic data for edge cases (e.g., longest allowed string).
+
+Copy anonymized production data for realistic scenarios (with approvals and privacy compliance).
+
+Use automated tools to generate or manage data as needed.
 

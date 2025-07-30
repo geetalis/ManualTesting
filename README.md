@@ -1,20 +1,21 @@
 # ManualTesting
 
-1. Introduction to Manual Testing
+1. **Introduction to Manual Testing**
    
 Overview of Software Testing
 Software testing is the process of evaluating software applications to ensure they function correctly, meet requirements, and are free of defects. The aim is to identify bugs, ensure reliability, verify performance, and confirm that the software behaves as expected when used by real-world users.
 
-2. Types of software testing include manual and automated approaches. Both contribute to overall product quality.
+2. **Types of software testing include manual and automated approaches**.
+   Both contribute to overall product quality.
 
-a) Manual Testing: Definition and Approach
+a) **Manual Testing**: Definition and Approach
 Manual testing requires human testers to execute test cases step-by-step without the use of automated scripts or tools. Testers interact with the application from the perspective of an end user, following predetermined scenarios, or exploring the system to find issues.
 
 Manual functional testing ensures that each feature works as specified by actively using the product and comparing its actual behavior against requirements.
 
 Examples of manual testing tasks include filling out web forms, clicking through application screens, and documenting whether expected outcomes are achieved.
 
-Importance of Manual Testing
+**Importance of Manual Testing**
 Human Insight: Testers provide context, intuition, and empathy—enabling them to notice subtle usability or visual issues that automation may overlook.
 
  i. Early Defect Detection: Manual testing helps uncover bugs early in development, especially in new or rapidly evolving features not yet suitable for automation.
@@ -27,7 +28,7 @@ Human Insight: Testers provide context, intuition, and empathy—enabling them t
 
  v. Foundation for Automation: All new applications require some degree of manual testing before processes can be automated, validating the product's readiness and determining which tests are most valuable to automate.
 
-3. Roles and Responsibilities of a Manual Tester
+3. **Roles and Responsibilities of a Manual Tester**
 Key Roles:
 
 Manual Tester / Test Engineer
@@ -141,7 +142,7 @@ Several SDLC models exist to organize these phases. Choosing a model depends on 
 **Model	Description	Best for	Key Characteristics**
 <img width="764" height="477" alt="image" src="https://github.com/user-attachments/assets/47ca42b0-f7e9-4518-834e-d98976f2bb34" />
 
-1. Waterfall Model
+1. **Waterfall Model**
 Phases flow downwards linearly, without overlap.
 
 Emphasis on documentation and upfront planning.
@@ -150,7 +151,7 @@ Testing happens after the entire coding phase is complete.
 
 Not suitable for changing requirements because once a phase is done, it’s costly to revisit.
 
-2. Spiral Model
+2. **Spiral Model**
 Combines iterative development with systematic risk assessment.
 
 Development proceeds in spirals or loops, each involving planning, risk analysis, engineering, and evaluation.
@@ -159,7 +160,7 @@ After each loop, a prototype or partial release is produced.
 
 Very useful for complex, high-risk projects where requirements are unclear.
 
-3. V-Model (Validation and Verification Model)
+3. **V-Model (Validation and Verification Model)**
 Represents each development phase with a corresponding testing phase forming a “V” shape.
 
 For example, Requirements phase links to Acceptance Testing; Design phase links to System Testing.
@@ -168,7 +169,7 @@ Ensures testing is planned early and executed alongside development.
 
 Widely used in regulated industries requiring high quality.
 
-4. Agile Model
+4. **Agile Model**
 Development is broken into small iterations or sprints, typically 2-4 weeks long.
 
 Each sprint produces a potentially shippable product increment.
@@ -361,8 +362,7 @@ Purpose: To ensure every feature works as expected from a user or business persp
 
 Scope: Tests user commands, data manipulation, integrations, business processes, and system functionality.
 
-Typical Tests:
-
+**Typical Tests:**
 Unit testing (individual components)
 
 Integration testing (how components work together)
@@ -481,7 +481,7 @@ Manual/Automated: Usually manual.
 
 <img width="685" height="618" alt="image" src="https://github.com/user-attachments/assets/17efe361-1702-472d-b487-f7c4d2f322fc" />
 
-**Testing Techniques**
+4. **Testing Techniques**
 
 **Black Box Testing**
 Definition: Black Box Testing is a software testing technique where the tester evaluates the functionality of the application without any knowledge of its internal code or implementation. It focuses on testing the software from an end-user’s perspective, validating inputs against expected outputs.
@@ -494,19 +494,19 @@ Focuses on functionality, requirements, and behavior of the system.
 
 Tests are based on requirements, use cases, and business logic.
 
-Common Black Box Testing Techniques:
+**Common Black Box Testing Techniques:**
 
-Equivalence Partitioning: Divides input data into classes or sets where test cases for one value represent the entire class. For example, for an age input range 18–65, testing one valid age (say 30) represents all valid ages.
+**Equivalence Partitioning:** Divides input data into classes or sets where test cases for one value represent the entire class. For example, for an age input range 18–65, testing one valid age (say 30) represents all valid ages.
 
-Boundary Value Analysis (BVA): Tests the edge values just inside and outside input boundaries where defects often occur (e.g., test values 17, 18, 65, 66 for an age input 18–65).
+**Boundary Value Analysis (BVA):** Tests the edge values just inside and outside input boundaries where defects often occur (e.g., test values 17, 18, 65, 66 for an age input 18–65).
 
-Decision Table Testing: Uses tables mapping combinations of inputs (conditions) to outputs (actions), useful for complex business rules.
+**Decision Table Testing:** Uses tables mapping combinations of inputs (conditions) to outputs (actions), useful for complex business rules.
 
-State Transition Testing: Tests different states of an application and transitions triggered by events (e.g., logged in, logged out states).
+**State Transition Testing:** Tests different states of an application and transitions triggered by events (e.g., logged in, logged out states).
 
-Error Guessing: Based on experience, testers anticipate common errors developers might make.
+**Error Guessing:** Based on experience, testers anticipate common errors developers might make.
 
-Advantages:
+**Advantages:**
 
 Tests software from user’s perspective.
 
@@ -514,7 +514,7 @@ Does not require knowledge of internal implementation.
 
 Effective for validation and acceptance testing.
 
-Limitations:
+**Limitations:**
 
 Limited coverage of internal code paths.
 
@@ -533,7 +533,7 @@ Focus on code coverage (statement, branch, path coverage).
 
 Common White Box Testing Techniques:
 
-Unit Testing: Testing individual functions/methods/classes.
+**Unit Testing:** Testing individual functions/methods/classes.
 
 Statement Coverage: Ensuring every line of code is executed at least once.
 
@@ -570,7 +570,7 @@ Combines advantages of both black box and white box testing.
 
 Focus on both functionality and some code or data structure verification.
 
-Common Grey Box Testing Approaches:
+**Common Grey Box Testing Approaches:**
 
 Validate data flow between modules.
 
@@ -598,7 +598,7 @@ Partial access to code or architecture may limit testing depth.
 
 <img width="707" height="351" alt="image" src="https://github.com/user-attachments/assets/0d342ada-3f91-4497-a479-c20f28124216" />
 
-**Test Case Development**
+5. **Test Case Development**
 Test Case Development is the process of identifying, documenting, and organizing the tests that will verify the software meets its requirements. It ensures systematic, repeatable testing and helps teams detect issues early.
 
 **Steps for Test Case Development:**
@@ -640,7 +640,7 @@ Remarks/Comments: Additional notes
 
 <img width="780" height="475" alt="image" src="https://github.com/user-attachments/assets/d07839c9-0f1e-4086-b807-d84aada8fd98" />
 
-Best Practices for Writing Test Cases
+**Best Practices for Writing Test Cases**
 Be clear, concise, and unambiguous.
 
 Ensure test cases are self-explanatory and can be run independently.
@@ -657,10 +657,10 @@ Specify necessary test data and environment.
 
 Review for coverage, completeness, and accuracy.
 
-Test Case Design Techniques
+6. **Test Case Design Techniques**
 Test case design techniques help ensure high-quality, high-coverage test cases. They can be broadly categorized as:
 
-1. Black Box Testing Techniques (No code knowledge needed)
+1. **Black Box Testing Techniques** (No code knowledge needed)
 Equivalence Partitioning: Divide inputs into equivalent groups (e.g., valid usernames, invalid usernames). Test one value per group.
 
 Boundary Value Analysis (BVA): Test at and around boundaries (e.g., minimum, maximum, just below, just above).
@@ -671,15 +671,15 @@ State Transition Testing: Test how the system transitions between states based o
 
 Error Guessing: Rely on experience to guess areas likely to contain defects.
 
-2. White Box Testing Techniques (Knowledge of code structure)
+2. **White Box Testing Techniques** (Knowledge of code structure)
 Statement/Branch/Path Coverage: Ensure tests execute all logical paths, branches, and statements in the code.
 
 Loop Testing: Test the validity of different loop executions (zero, one, many times).
 
-3. Experience-Based/Exploratory Techniques
+3. **Experience-Based/Exploratory Techniques**
 Use tester experience to design ad hoc or exploratory tests in areas where traditional techniques might miss defects.
 
-Test Data Preparation
+7. **Test Data Preparation**
 Test Data Preparation involves identifying, creating, and managing the data needed to execute test cases. Good test data is realistic, represents the full range of input possibilities (valid, invalid, boundary cases), and helps uncover defects that otherwise might go unnoticed.
 
 Typical Test Data Types:
@@ -739,4 +739,6 @@ Better defect tracking and faster resolution
 Support for manual and automated testing
 
 Data-driven decision making through comprehensive reporting
+
+Some of the popular Test Management Tools are **JIRA, Quality Center (HP ALM), TestRail**
 

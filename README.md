@@ -742,3 +742,113 @@ Data-driven decision making through comprehensive reporting
 
 Some of the popular Test Management Tools are **JIRA, Quality Center (HP ALM), TestRail**
 
+
+9. **Basics of Agile Methodology**
+
+Agile is a flexible, iterative software development methodology designed to deliver customer value quickly and efficiently.
+
+Focuses on adaptability to change, early and continuous delivery, collaboration, and continuous improvement
+
+**12 Principles:**
+
+Customer satisfaction by early and continuous delivery of valuable software.
+
+Welcome changing requirements.
+
+Deliver working software frequently.
+
+Close daily collaboration between business and development.
+
+Build projects around motivated individuals.
+
+Face-to-face conversation is best.
+
+Working software is the primary measure of progress.
+
+Sustainable development pace.
+
+Continuous attention to technical excellence.
+
+Simplicity—the art of maximizing work not done—is essential.
+
+Self-organizing teams.
+
+Regularly reflect to become more effective.
+
+**Characteristics of Agile**
+Iterative and incremental development through short cycles called "sprints."
+
+Regular feedback and adaptation.
+
+Collaborative and cross-functional teams.
+
+Focus on working software over exhaustive documentation.
+
+Continuous improvement via sprint reviews and retrospectives.
+
+
+**Scrum Framework**
+
+**Introduction to Scrum**
+Scrum is a popular Agile framework that structures development into fixed-length iterations called sprints (usually 2–4 weeks).
+
+Designed for transparency, inspection, and adaptation.
+
+**Scrum Roles**
+Product Owner: Represents the customer, defines and prioritizes requirements (Product Backlog).
+
+Scrum Master: Facilitates the process, removes impediments, ensures Scrum principles are followed.
+
+Development Team: Cross-functional team responsible for delivering potentially shippable increments.
+
+**Scrum Artifacts**
+Product Backlog: Ordered list of all desired work on the product.
+
+Sprint Backlog: Set of items to be completed in the current sprint.
+
+Increment: The sum of all completed Product Backlog items in a sprint
+
+**Scrum Events**
+Sprint: Core development cycle (timeboxed iteration).
+
+Sprint Planning: Meeting to decide what will be done in the upcoming sprint.
+
+Daily Scrum: 15-minute standup for team synchronization.
+
+Sprint Review: End-of-sprint demonstration and feedback session.
+
+Sprint Retrospective: Meeting to reflect on process and identify improvements.
+
+
+**Role of a Tester in Agile Projects**
+**Tester’s Responsibilities in Agile**
+Collaborate closely with developers, product owners, and business analysts from the start.
+
+Participate in requirement reviews, sprint planning, and acceptance criteria definition.
+
+Continuously design, execute, and update test cases throughout the sprint.
+
+Provide quick feedback about quality, risks, and test results.
+
+Automate repetitive and regression tests for rapid feedback cycles.
+
+Embrace exploratory testing to identify potential gaps.
+
+**Testing as a Continuous Activity**
+Testing happens concurrently with development, not as a separate phase at the end.
+
+Testers contribute to defining "done," acceptance criteria, and quality standards.
+
+Involved in sprint retrospectives to suggest improvements in testing practices.
+
+**Tester's Skills in Agile**
+Strong communication and collaboration.
+
+Flexibility, quick adaptation to change.
+
+Automation tool proficiency is highly valued.
+
+Business perspective—understand customer needs and priorities.
+
+
+

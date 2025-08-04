@@ -483,36 +483,57 @@ Manual/Automated: Usually manual.
 
 4. **Testing Techniques**
 
-**Black Box Testing**
-Definition: Black Box Testing is a software testing technique where the tester evaluates the functionality of the application without any knowledge of its internal code or implementation. It focuses on testing the software from an end-user’s perspective, validating inputs against expected outputs.
+   a) **Black Box Testing Techniques** are methods used to design test cases that validate a software's functionality and behavior without any knowledge of its internal code or structure. In black box testing, testers focus solely on the external outputs based on various inputs and user scenarios, testing the system as an end-user would.
 
-Key Characteristics:
+Definition
+Black box testing is a technique in which the tester assesses the software's features, responses, and behavior, having no access to the code, architecture, or internal workings of the application. It relies entirely on requirements and specifications to derive tests.
 
-Tester does not need programming knowledge or access to source code.
+Common Black Box Test Case Design Techniques
+**Equivalence Partitioning**
 
-Focuses on functionality, requirements, and behavior of the system.
+Input data is divided into equivalent groups or "partitions." One value from each partition is tested, as all values in a partition should be treated similarly by the application.
 
-Tests are based on requirements, use cases, and business logic.
+Example: For an age field accepting 18–65, valid partitions (18–65) and invalid partitions (<18, >65) are tested.
 
-**Common Black Box Testing Techniques:**
+**Boundary Value Analysis (BVA)**
 
-**Equivalence Partitioning:** Divides input data into classes or sets where test cases for one value represent the entire class. For example, for an age input range 18–65, testing one valid age (say 30) represents all valid ages.
+Focuses on test cases at the boundaries of input ranges where errors frequently occur.
 
-**Boundary Value Analysis (BVA):** Tests the edge values just inside and outside input boundaries where defects often occur (e.g., test values 17, 18, 65, 66 for an age input 18–65).
+Example: Test with values 17, 18, 65, and 66 for the above age field.
 
-**Decision Table Testing:** Uses tables mapping combinations of inputs (conditions) to outputs (actions), useful for complex business rules.
+**Decision Table Testing**
 
-**State Transition Testing:** Tests different states of an application and transitions triggered by events (e.g., logged in, logged out states).
+Used for functions that produce different outputs for combinations of inputs. Tests are designed using tables of input conditions and corresponding actions/outcomes.
 
-**Error Guessing:** Based on experience, testers anticipate common errors developers might make.
+Example: Access rights determined by user role and location.
 
-**Advantages:**
+State Transition Testing
 
-Tests software from user’s perspective.
+Tests how the application responds to events or inputs as it transitions from one state to another.
 
-Does not require knowledge of internal implementation.
+Example: Testing login attempts that lock an account after three failures.
 
-Effective for validation and acceptance testing.
+**Error Guessing**
+
+Relies on tester experience to guess likely error-prone areas or input combinations, supplementing systematic approaches.
+
+**Use Case and Exploratory Testing**
+
+Testing real-world application scenarios or workflows described in use cases, and creatively exploring the system beyond documented steps.
+
+Other specialized techniques include cause-effect graphing and all-pairs testing for complex or combinatorial scenarios.
+
+**Key Features of Black Box Testing Techniques**
+No knowledge of code required—suitable for non-developers.
+
+Requirement-driven: Tests validate functional and non-functional requirements.
+
+Covers functional, non-functional, and integration aspects.
+
+Effective for system, acceptance, regression, and user acceptance testing.
+
+**When to Use**
+Black box testing is used at various stages, including system testing, integration testing, user acceptance testing, regression, smoke, and sanity checks
 
 **Limitations:**
 
@@ -520,18 +541,69 @@ Limited coverage of internal code paths.
 
 May miss some logical errors in code.
 
-**White Box Testing**
-Definition: White Box Testing (also called Clear Box or Glass Box Testing) involves testing the internal workings, structure, and logic of the software. The tester has knowledge of the source code and designs test cases to exercise specific code paths, branches, conditions, and loops.
+   b) **White Box Testing** is a software testing method where the tester has full visibility and knowledge of the application's internal structure, code, and logic. The primary goal is to ensure that the internal operations of the software—such as algorithms, paths, data flows, and logic—are correct, efficient, and free of defects.
 
-Key Characteristics:
+**Key Features**
+Code-Awareness: Testers analyze and use the source code, design documents, and internal structures to design test cases.
 
-Requires programming knowledge.
+Other Names: Also called clear box testing, glass box testing, structural testing, or open box testing.
 
-Tests internal logic and structure.
+Focus: Tests the software’s internal logic, branches, paths, conditions, loops, and data handling.
 
-Focus on code coverage (statement, branch, path coverage).
+**Objectives**
+Thoroughness: Achieve maximum code coverage by testing all possible paths and logic branches.
 
-Common White Box Testing Techniques:
+Error Detection: Find hidden errors, dead code, security vulnerabilities, or inefficiencies that are not visible through external testing.
+
+Optimization: Help in code refactoring and improve the overall quality and maintainability of code.
+
+**Common Techniques**
+Control Flow Testing: Checks all possible execution paths of the program (sequences, selections, loops).
+
+Statement Coverage: Ensures every executable statement is run at least once.
+
+Branch/Decision Coverage: Verifies that all possible code branches (including if/else and switch) are tested.
+
+Path Testing: Exercises every possible path through a program.
+
+Loop Testing: Evaluates the correct functioning of loops (for, while, etc.).
+
+Data Flow Testing: Examines the lifecycle of variables (definition, usage, disposal).
+
+Mutation Testing: Modifies the program in small ways to ensure the test cases catch these changes.
+
+**Levels Where White Box Testing Is Applied**
+**Unit Testing:** Most common; individual functions or modules are tested by developers with full access to code.
+
+**Integration Testing:** Interactions between integrated modules are checked for correctness.
+
+**Regression Testing:** Ensures recent changes haven’t negatively impacted the code, often using automated tests.
+
+**Advantages**
+Direct verification of code logic and structure.
+
+High level of coverage: Finds defects that black box (external) testing might miss.
+
+Promotes better code practices: Coding standards, security checks, and error handling are directly reviewed.
+
+**Limitations**
+Requires deep programming and system understanding.
+
+Time-consuming for large or complex projects.
+
+May not reveal missing requirements or UI/business logic issues, as the focus is internal.
+
+Can miss errors related to unimplemented or misunderstood customer requirements.
+
+Real-World Analogy
+White box testing is like an electrician inspecting a building’s wiring inside the walls, ensuring every connection is correct—compared to black box testing, which checks that pressing wall switches turns on lights, regardless of how the wires are run.
+
+When to Use
+To verify the correctness and security of code—especially critical modules or algorithms.
+
+During early stages of development (unit/integration testing).
+
+When maximum code coverage is desired.
 
 **Unit Testing:** Testing individual functions/methods/classes.
 
@@ -543,7 +615,7 @@ Path Coverage: Testing all possible execution paths.
 
 Mutation Testing: Introducing small changes (mutations) to code to check if test cases detect bugs.
 
-Advantages:
+**Advantages:**
 
 Ensures thorough code coverage.
 
@@ -551,7 +623,7 @@ Early detection of logical errors.
 
 Optimizes and improves code quality.
 
-Limitations:
+**Limitations:**
 
 Requires knowledge of code and programming.
 
@@ -580,7 +652,7 @@ Use internal knowledge to design more effective test cases than pure black box t
 
 Perform regression testing more efficiently by understanding impact areas.
 
-Advantages:
+**Advantages:**
 
 Better test coverage than pure black box testing.
 
@@ -588,7 +660,7 @@ Detects context-specific errors related to data flow or security.
 
 Requires less code knowledge than white box testing, balancing complexity.
 
-Limitations:
+**Limitations:**
 
 Not as thorough as white box testing.
 
@@ -657,29 +729,7 @@ Specify necessary test data and environment.
 
 Review for coverage, completeness, and accuracy.
 
-6. **Test Case Design Techniques**
-Test case design techniques help ensure high-quality, high-coverage test cases. They can be broadly categorized as:
-
-1. **Black Box Testing Techniques** (No code knowledge needed)
-Equivalence Partitioning: Divide inputs into equivalent groups (e.g., valid usernames, invalid usernames). Test one value per group.
-
-Boundary Value Analysis (BVA): Test at and around boundaries (e.g., minimum, maximum, just below, just above).
-
-Decision Table Testing: Create tables to cover combinations of conditions and actions, suitable for features with business rules.
-
-State Transition Testing: Test how the system transitions between states based on events or inputs.
-
-Error Guessing: Rely on experience to guess areas likely to contain defects.
-
-2. **White Box Testing Techniques** (Knowledge of code structure)
-Statement/Branch/Path Coverage: Ensure tests execute all logical paths, branches, and statements in the code.
-
-Loop Testing: Test the validity of different loop executions (zero, one, many times).
-
-3. **Experience-Based/Exploratory Techniques**
-Use tester experience to design ad hoc or exploratory tests in areas where traditional techniques might miss defects.
-
-7. **Test Data Preparation**
+6. **Test Data Preparation**
 Test Data Preparation involves identifying, creating, and managing the data needed to execute test cases. Good test data is realistic, represents the full range of input possibilities (valid, invalid, boundary cases), and helps uncover defects that otherwise might go unnoticed.
 
 Typical Test Data Types:

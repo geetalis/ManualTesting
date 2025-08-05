@@ -505,9 +505,12 @@ Example: Test with values 17, 18, 65, and 66 for the above age field.
 
 Used for functions that produce different outputs for combinations of inputs. Tests are designed using tables of input conditions and corresponding actions/outcomes.
 
-Example: Access rights determined by user role and location.
+Example: 
 
-State Transition Testing
+<img width="809" height="429" alt="image" src="https://github.com/user-attachments/assets/b81bb681-a5b5-401c-a56e-4dc4d78b45dc" />
+
+
+**State Transition Testing**
 
 Tests how the application responds to events or inputs as it transitions from one state to another.
 
